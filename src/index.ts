@@ -1,3 +1,6 @@
+import { FetchHttpGetService } from './infra/fetch/services/FetchHttpGetService';
+import { FetchHttpPostService } from './infra/fetch/services/FetchHttpPostService';
+
 // Services
 export { HttpGetService } from './services/HttpGetService';
 export { HttpPostService } from './services/HttpPostService';
@@ -11,12 +14,8 @@ export { HttpRequest } from './entities/HttpRequest';
 export { HttpError } from './errors/HttpError';
 
 // Infra
-import { FetchHttpGetService } from './infra/fetch/services/FetchHttpGetService';
-import { FetchHttpPostService } from './infra/fetch/services/FetchHttpPostService';
 
-export const Infra = {
-	fetch: {
-		FetchHttpGetService,
-		FetchHttpPostService,
-	},
+export const Infrastructure = {
+	FetchHttpGetService,
+	FetchHttpPostService,
 };
