@@ -1,0 +1,27 @@
+{
+	"name": "http-service-lib",
+	"version": "1.0.0",
+	"description": "Reusable Http Service and implementations",
+	"main": "./lib/index.js",
+	"scripts": {
+		"build": "tsc -p ./tsconfig-build.json",
+		"clear": "rm -rf ./lib",
+		"prebuild": "npm run clear",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"http-utils",
+		"fetch"
+	],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^5.30.6",
+		"@typescript-eslint/parser": "^5.30.6",
+		"eslint": "^8.20.0",
+		"typescript": "^4.7.4"
+	},
+	"files": [
+		"lib/**"
+	]
+}
