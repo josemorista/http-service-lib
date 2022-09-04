@@ -1,6 +1,6 @@
 {
 	"name": "http-service-lib",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Reusable Http Service and implementations",
 	"main": "./lib/index.js",
 	"scripts": {
