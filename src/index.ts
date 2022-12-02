@@ -13,3 +13,4 @@ export { HttpError } from './errors/HttpError';
 // Infra
 export { FetchHttpGetService } from './infra/fetch/services/FetchHttpGetService';
 export { FetchHttpPostService } from './infra/fetch/services/FetchHttpPostService';
+export { FetchHttpPutService } from './infra/fetch/services/FetchHttpPutService';
