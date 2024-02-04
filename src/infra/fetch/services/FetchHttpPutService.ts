@@ -11,6 +11,7 @@ export class FetchHttpPutService extends FetchHttpService implements HttpPutServ
         headers: request.headers,
         method: 'PUT',
         body: this.parseRequestBody(request),
+        credentials: 'same-origin',
       });
       if (!response.ok) throw new HttpError(await response.text(), response.status);
       return new HttpResponse(response.status, await this.parseResponseBody<T>(response));
