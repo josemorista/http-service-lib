@@ -10,7 +10,7 @@ export class FetchHttpDeleteService extends FetchHttpService implements HttpDele
       const response = await fetch(request.url, {
         headers: request.headers,
         method: 'DELETE',
-        credentials: 'same-origin',
+        credentials: 'include',
       });
       if (!response.ok) throw new HttpError(await response.text(), response.status);
       return new HttpResponse(response.status, await this.parseResponseBody<T>(response));

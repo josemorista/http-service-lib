@@ -11,7 +11,7 @@ export class FetchHttpPostService extends FetchHttpService implements HttpPostSe
         headers: request.headers,
         method: 'POST',
         body: this.parseRequestBody(request),
-        credentials: 'same-origin',
+        credentials: 'include',
       });
       if (!response.ok) throw new HttpError(await response.text(), response.status);
       return new HttpResponse(response.status, await this.parseResponseBody<T>(response));
